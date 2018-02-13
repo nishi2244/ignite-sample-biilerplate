@@ -69,6 +69,13 @@ async function install(context) {
   );
   spinner.stop();
 
+  filesystem.remove(`${APP_PATH}/src/actions/__dummy__`);
+  filesystem.remove(`${APP_PATH}/src/components/__dummy__`);
+  filesystem.remove(`${APP_PATH}/src/constants/__dummy__`);
+  filesystem.remove(`${APP_PATH}/src/containers/__dummy__`);
+  filesystem.remove(`${APP_PATH}/src/reducers/__dummy__`);
+  filesystem.remove(`${APP_PATH}/src/sagas/__dummy__`);
+
   // run npm install
   spinner.text = "▸ installing ignite dependencies";
   spinner.start();
