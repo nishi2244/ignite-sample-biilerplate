@@ -10,12 +10,10 @@ const NPM_MODULE_VERSION = '0.0.1'
 
 const add = async function (context) {
   // Learn more about context: https://infinitered.github.io/gluegun/#/context-api.md
-  const { ignite, filesystem } = context
+  // const { ignite, filesystem } = context
 
   // install an NPM module and link it
-  await ignite.addModule(NPM_MODULE_NAME, { link: true, version: NPM_MODULE_VERSION })
-
-  
+  // await ignite.addModule(NPM_MODULE_NAME, { link: true, version: NPM_MODULE_VERSION })
 
   // Example of copying templates/SampleBiilerplate to App/SampleBiilerplate
   // if (!filesystem.exists(`${APP_PATH}/App/SampleBiilerplate`)) {
@@ -34,12 +32,10 @@ const add = async function (context) {
  */
 const remove = async function (context) {
   // Learn more about context: https://infinitered.github.io/gluegun/#/context-api.md
-  const { ignite, filesystem } = context
+  // const { ignite, filesystem } = context
 
   // remove the npm module and unlink it
-  await ignite.removeModule(NPM_MODULE_NAME, { unlink: true })
-
-  
+  // await ignite.removeModule(NPM_MODULE_NAME, { unlink: true })
 
   // Example of removing App/SampleBiilerplate folder
   // const removeSampleBiilerplate = await context.prompt.confirm(
