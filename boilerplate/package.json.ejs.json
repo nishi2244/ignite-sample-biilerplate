@@ -1,0 +1,46 @@
+{
+  "name": "reactnative",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "storybook": "storybook start -p 7007",
+    "eslint": "eslint",
+    "flow": "flow",
+    "check": "concurrently 'yarn run flow' 'yarn run eslint ./src' -n flow,eslint -p name -c green,magenta"
+  },
+  "dependencies": {
+    "babel-eslint": "^8.0.3",
+    "concurrently": "^3.5.1",
+    "eslint-plugin-flowtype": "^2.40.1",
+    "flow-bin": "0.56.0",
+    "flow-inspect": "^1.0.1",
+    "react": "16.0.0",
+    "react-element-to-jsx-string": "^13.1.0",
+    "react-native": "0.50.3",
+    "react-native-router-flux": "^4.0.0-beta.22",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-form": "^7.2.0",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.0",
+    "styled-components": "^2.2.3",
+  },
+  "devDependencies": {
+    "babel-jest": "21.2.0",
+    "babel-preset-react-native": "4.0.0",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "21.2.1",
+    "prop-types": "^15.6.0",
+    "react-dom": "16.0.0",
+    "react-test-renderer": "16.0.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
