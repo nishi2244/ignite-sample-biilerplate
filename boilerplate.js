@@ -7,7 +7,7 @@
  *
  */
 
-const REACT_NATIVE_VERSION = "0.42.0";
+const REACT_NATIVE_VERSION = "0.50.3";
 
 /**
  * Let's install.
@@ -69,6 +69,8 @@ async function install(context) {
   );
   spinner.stop();
 
+  filesystem.remove('__tests__')
+  filesystem.remove('App.js')
   filesystem.remove(`${APP_PATH}/src/actions/__dummy__`);
   filesystem.remove(`${APP_PATH}/src/components/__dummy__`);
   filesystem.remove(`${APP_PATH}/src/constants/__dummy__`);
